@@ -12,6 +12,7 @@ namespace Gagan_Library.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        Book book = new Book();
 
         public HomeController(ILogger<HomeController> logger)
         {

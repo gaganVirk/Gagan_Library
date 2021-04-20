@@ -14,5 +14,6 @@ namespace Gagan_Library.Data
 
         }
         public DbSet<Book> Book { get; set; }
+        public DbSet<UserInfo> UserInfo { get; set; }
     }
 }

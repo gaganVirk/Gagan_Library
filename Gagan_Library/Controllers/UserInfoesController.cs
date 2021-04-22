@@ -20,9 +20,17 @@ namespace Gagan_Library.Controllers
         }
 
         // GET: UserInfoes
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public ViewResult Index()
         {
-            return View(await _context.UserInfo.ToListAsync());
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Send()
+        {
+            
+            return View();
         }
 
         // GET: UserInfoes/Details/5
